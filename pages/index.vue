@@ -5,15 +5,10 @@
       <h1 class="title">
         nuxt-ts
       </h1>
-      <h2 class="subtitle">
-        My geometric Nuxt.js project
-      </h2>
+      <h2 class="subtitle">My geometric Nuxt.js project</h2>
+
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
         </a>
         <a
@@ -28,14 +23,15 @@
   </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<script lang="ts">
+import { Component, Vue } from "nuxt-property-decorator";
 
-export default {
+@Component({
   components: {
-    Logo
+    Logo: () => import("~/components/Logo.vue")
   }
-}
+})
+export default class IndexPage extends Vue {}
 </script>
 
 <style>
@@ -49,8 +45,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
