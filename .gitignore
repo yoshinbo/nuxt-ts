@@ -1,0 +1,30 @@
+# Commons
+*.swp
+*.swo
+
+# MacOS
+.DS_Store
+
+# RubyMine
+.idea
+
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# log
+yarn-error.log
+
+# env
+.env
+
+# SSL Cert
+server/localhost/localhost*
