@@ -15,7 +15,8 @@
   "dependencies": {
     "nuxt": "~>2.8.0",
     "nuxt-property-decorator": "^2.3.0",
-    "ts-node": "^8.3.0"
+    "ts-node": "^8.3.0",
+    "vuex-module-decorators": "^0.9.9"
   },
   "devDependencies": {
     "@nuxt/typescript": "^2.8.1",

@@ -2,6 +2,10 @@ import NuxtConfiguration from "@nuxt/config";
 
 const config: NuxtConfiguration = {
   mode: "universal",
+  server: {
+    port: 8000,
+    host: 'localhost'
+  },
   /*
    ** Headers of the page
    */
