@@ -5,8 +5,8 @@ import {
   getModule,
   Module
 } from "vuex-module-decorators";
-import store from "@/store/store";
-import { User, UserStatus } from "@/types";
+import { store } from "~/store";
+import { User, UserStatus } from "~/types";
 
 interface IndexPageState {
   user: User | null;
@@ -29,8 +29,8 @@ class IndexPage extends VuexModule implements IndexPageState {
 
   // getters
   get name() {
-    if (this.user == null) return 'null'
-    return this.user.name
+    if (this.user == null) return "null";
+    return this.user.name;
   }
 
   // actions

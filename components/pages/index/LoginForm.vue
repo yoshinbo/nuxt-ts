@@ -10,7 +10,7 @@
 
 <script lang="ts">
 import { Component, Emit, Vue } from "nuxt-property-decorator";
-import PageStore, { Form } from "@/store/pages/index";
+import PageStore, { Form } from "~/store/pages/index";
 
 @Component
 export default class LoginButton extends Vue {

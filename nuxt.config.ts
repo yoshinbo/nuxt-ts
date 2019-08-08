@@ -4,7 +4,7 @@ const config: NuxtConfiguration = {
   mode: "universal",
   server: {
     port: 8000,
-    host: 'localhost'
+    host: "localhost"
   },
   /*
    ** Headers of the page
@@ -37,12 +37,7 @@ const config: NuxtConfiguration = {
   /*
    ** Nuxt.js modules
    */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    // "@nuxtjs/axios",
-    // "@nuxtjs/pwa",
-    // "@nuxtjs/eslint-module"
-  ],
+  modules: [],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -60,8 +55,7 @@ const config: NuxtConfiguration = {
         ["@babel/plugin-proposal-decorators", { legacy: true }],
         ["@babel/plugin-proposal-class-properties", { loose: true }]
       ]
-    },
-    extend(config, ctx) {}
+    }
   }
 };
 export default config;

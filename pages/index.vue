@@ -7,8 +7,7 @@
 
 <script lang="ts">
 import { Component, Emit, Vue } from "nuxt-property-decorator";
-import { User } from "@/types";
-import PageStore from "@/store/pages/index";
+import PageStore from "~/store/pages/index";
 
 @Component({
   components: {
@@ -25,7 +24,7 @@ export default class IndexPage extends Vue {
 
   @Emit()
   private test() {
-    console.log(`test -> ${PageStore.user}`)
+    console.log(`test -> ${PageStore.user}`);
   }
 }
 </script>
